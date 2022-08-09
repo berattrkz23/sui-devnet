@@ -34,8 +34,6 @@ journalctl -u suid -f -o cat
 
 # Şimdi Sui Wallet'ı kullanacağız.
 
-* Telegram kanalı: https://t.me/SuiTurkish
-
 * Sui Wallet'ı buradan indiriyoruz: [Wallet Linki](https://chrome.google.com/webstore/detail/sui-wallet/opcgpfmipidbgpenhmajoajpbobppdil/related)
 
 * Daha sonra discorda girip: [Discord](https://discord.gg/Cj696xkn) #devnet-faucet kanalından oluşturduğumuz cüzdan adresıne token alalım.
@@ -54,9 +52,6 @@ journalctl -u suid -f -o cat
 
 # Daha sonra discorda giriyoruz ve şu şekilde mesaj atıyoruz #node-ip-application kanalına: https://discord.gg/GUeN8TY7xD
 
-* DAHA ÖNCE ATTIYSANIZ BİR DAHA GEREKLİ DEĞİL ATMANIZ İÇİN
-
-![image](https://user-images.githubusercontent.com/101149671/178118265-a2463048-f656-4382-87cf-faaef1d032d0.png)
 
 Not: #pick-a-role role kanalından da rol alabilirsiniz isterseniz emojilere tıklayarak.
 
