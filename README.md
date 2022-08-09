@@ -50,11 +50,6 @@ journalctl -u suid -f -o cat
 
 * Explorer https://explorer.devnet.sui.io/
 
-# Daha sonra discorda giriyoruz ve şu şekilde mesaj atıyoruz #node-ip-application kanalına: https://discord.gg/GUeN8TY7xD
-
-
-Not: #pick-a-role role kanalından da rol alabilirsiniz isterseniz emojilere tıklayarak.
-
 # Nodeunuzu kontrol etmek için: https://node.sui.zvalid.com/
 
 ![image](https://user-images.githubusercontent.com/101149671/178118300-29d6bf7e-c78a-40b0-97fd-26bd89d22b05.png)
