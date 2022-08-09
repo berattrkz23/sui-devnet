@@ -16,21 +16,21 @@ Node kurduktan sonra sonda söyleyeceğim işlemleri yapmayı unutmayın!!
 screen -S sui
 ```
 
-# Full nodeumuzu yükleyelim:
+
+# Kurulum:
 ```
 wget -O sui.sh https://raw.githubusercontent.com/kj89/testnet_manuals/main/sui/sui.sh && chmod +x sui.sh && ./sui.sh
 ```
-
-# Node başarılı çalıştıktan sonra karşınıza şu şekilde bir görsel çıkacak:
-
-![image](https://user-images.githubusercontent.com/101149671/178935325-ba533e58-5cfa-4d9d-81f2-d7d595009b3b.png)
-
-# Logları kontrol:
+ # güncelleme
 ```
-docker logs -f sui-fullnode-1 --tail 50
+wget -qO update.sh https://raw.githubusercontent.com/kj89/testnet_manuals/main/sui/tools/update.sh && chmod +x update.sh && ./update.sh
 ```
 
-![image](https://user-images.githubusercontent.com/101149671/178935450-5928a3f9-e493-49f7-b235-913a56e7abc7.png)
+# Logları kontrol ve işlem bu kadar
+```
+journalctl -u suid -f -o cat
+```
+
 
 # Şimdi Sui Wallet'ı kullanacağız.
 
@@ -38,7 +38,7 @@ docker logs -f sui-fullnode-1 --tail 50
 
 * Sui Wallet'ı buradan indiriyoruz: [Wallet Linki](https://chrome.google.com/webstore/detail/sui-wallet/opcgpfmipidbgpenhmajoajpbobppdil/related)
 
-* Daha sonra discorda girip: [Discord](https://discord.gg/8G2SQvwA) #devnet-faucet kanalından oluşturduğumuz cüzdan adresıne token alalım.
+* Daha sonra discorda girip: [Discord](https://discord.gg/Cj696xkn) #devnet-faucet kanalından oluşturduğumuz cüzdan adresıne token alalım.
 
 * DİKKAT ÇOK HIZLIDIR :)
 
@@ -71,6 +71,7 @@ Not: #pick-a-role role kanalından da rol alabilirsiniz isterseniz emojilere tı
 journalctl -u suid -f -o cat
 ```
 
+
 # Node silmek için:
 ```
 sudo systemctl stop suid
@@ -81,7 +82,7 @@ sudo rm /etc/systemd/system/suid.service
 
 # Node durumunu kontrol:
 ```
-service docker status
+journalctl -u suid -f
 ```
 ![image](https://user-images.githubusercontent.com/101149671/178118339-82da6b52-bdb9-425a-af8d-832a671141aa.png)
 
